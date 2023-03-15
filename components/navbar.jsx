@@ -73,7 +73,6 @@ export default function Navbar() {
               variant="ghost"
               isActive={activeLink === link}
               onClick={() => setActiveLink(link)}
-              _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
             >
               {link}
             </Button>
@@ -102,7 +101,6 @@ export default function Navbar() {
         <Box pb={4} display={{ md: "none" }}>
           <Flex
             direction="column"
-            bg={useColorModeValue("gray.100", "gray.900")}
             p={2}
           >
             {Links.map((link) => (
@@ -114,7 +112,6 @@ export default function Navbar() {
                   setActiveLink(link);
                   onClose();
                 }}
-                _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
                 mb={2}
               >
                 {link}
